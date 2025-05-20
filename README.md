@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧪 Todo App - Frontend Intern Test
+---
 
-## Getting Started
+## 🎯 Mục tiêu dự án
 
-First, run the development server:
+- Thực hành quản lý state với Redux Toolkit.
+- Thiết kế giao diện UI/UX gọn gàng, thân thiện người dùng.
+- Tổ chức code rõ ràng, component hóa hợp lý.
+- Sử dụng localStorage để lưu trữ dữ liệu.
+
+---
+
+## ✅ Chức năng
+
+1. Hiển thị danh sách công việc (Todo):
+   - Mỗi công việc có nội dung, checkbox trạng thái hoàn thành, nút Sửa, nút Xóa.
+2. Thêm công việc mới (không thêm được nội dung rỗng).
+3. Xóa công việc.
+4. Sửa nội dung công việc.
+5. Đánh dấu hoàn thành/ chưa hoàn thành với hiệu ứng UI rõ ràng.
+6. Lưu dữ liệu Todo vào `localStorage` để giữ trạng thái khi reload trang.
+7. Loc danh sách công việc đã hoàn thành và chưa hoàn thành
+
+---
+
+## 🎨 UI/UX
+
+- Giao diện gọn gàng, rõ ràng, dễ dùng.
+- Input thêm công việc ở trên, danh sách Todo bên dưới.
+- Responsive tốt (hiển thị tốt trên cả điện thoại và desktop).
+- Sử dụng Tailwind CSS, không dùng các thư viện UI lớn.
+
+---
+
+## ⚙️ Công nghệ sử dụng
+
+- Next.js(Next 15)
+- Redux Toolkit 
+- Tailwind CSS
+- TypeScript 
+
+---
+
+## 📦 Hướng dẫn cài đặt và chạy
+
+### 1. Clone repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/trungky-0107/todo-app.git
+cd ten-repo
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2 . Cài đặt dependencies
+```bash
+npm install
+```
+### 3 . Chạy ứng dụng
+```bash
+npm run dev
+```
